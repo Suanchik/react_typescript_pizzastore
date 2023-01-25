@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import NotFound from './components/NotFound/notFound';
+import Header from './components/Header/header';
+import Home from './components/pages/home';
+import LazyHoc from './components/Hocs/lazyHoc';
+const PizzaInfo = React.lazy(() => import('./components/pages/pizza'));
+const Cart = React.lazy(() => import('./components/pages/cart'));
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <BrowserRouter>
+      <div className="wrapper">
+        <Header/>
+        <div className="content">
+         <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/cart" element={LazyHoc(Cart)}/>
+          <Route path="/home" element={<Home/>}/>
+          <Route path="/home/:id" element={LazyHoc(PizzaInfo)}/>
+          <Route path="*" element={<NotFound text={'unfortunately this page is not available in our online store'}/>}/>
+         </Routes>
+        </div>
+      </div>
+    </BrowserRouter>
     </div>
-  );
+  )
 }
 
 export default App;

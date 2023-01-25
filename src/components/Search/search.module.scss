@@ -1,0 +1,35 @@
+.search {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2.5px -1px black;
+    border-radius: 8px;
+    padding: 5px;
+    width: 255px;
+    margin-left: -400px;
+    input {
+        border: none;
+        outline: none;
+        padding: 0 0 0 10px;
+        width: 100%;
+        &::placeholder {
+            opacity: 0.8;
+        }
+    }
+    .closeIcon {
+        height: 12px;
+        width: 12px;
+        margin: 0 5px 0 10px;
+        opacity: 0.3;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    .searchIcon {
+        width: 22px;
+        height: 22px;
+        opacity: 0.3;
+    }
+}

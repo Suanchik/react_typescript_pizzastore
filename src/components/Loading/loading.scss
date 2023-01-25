@@ -1,0 +1,12 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    .pizzaImg {
+        width: 100px;
+    }
+    .item {
+        font-size: 40px;
+    }
+}

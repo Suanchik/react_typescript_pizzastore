@@ -1,0 +1,48 @@
+.modelBlock {
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.3);
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(3px);
+    z-index: 5000;
+    .modal {
+        background-color: #ffffff;
+        position: fixed;
+        border-radius: 10px;
+        height: 170px;
+        width: 400px;
+        right: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        box-shadow: 0 0 2px 0px black;
+        p {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            button {
+                border: none;
+                margin: 30px;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                box-shadow: 0 0 2px 0px black;
+                background-color: rgb(236, 236, 236);
+                cursor: pointer;
+                &:hover {
+                    transition: all ease-in-out 0.3s;
+                    background-color: tomato;
+                    color: white;
+                }
+            }
+        }
+    }
+}
