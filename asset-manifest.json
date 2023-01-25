@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react_typescript_pizzastore/static/css/main.fe1b1b7a.css",
-    "main.js": "/react_typescript_pizzastore/static/js/main.8a9446d4.js",
+    "main.js": "/react_typescript_pizzastore/static/js/main.260020d5.js",
     "static/css/339.70ef5567.chunk.css": "/react_typescript_pizzastore/static/css/339.70ef5567.chunk.css",
     "static/js/339.abf48570.chunk.js": "/react_typescript_pizzastore/static/js/339.abf48570.chunk.js",
     "static/css/184.50b3ffaf.chunk.css": "/react_typescript_pizzastore/static/css/184.50b3ffaf.chunk.css",
@@ -25,7 +25,7 @@
     "static/media/pizza-logo.svg": "/react_typescript_pizzastore/static/media/pizza-logo.56ac87032d8f6fdf863326acd06c0d97.svg",
     "index.html": "/react_typescript_pizzastore/index.html",
     "main.fe1b1b7a.css.map": "/react_typescript_pizzastore/static/css/main.fe1b1b7a.css.map",
-    "main.8a9446d4.js.map": "/react_typescript_pizzastore/static/js/main.8a9446d4.js.map",
+    "main.260020d5.js.map": "/react_typescript_pizzastore/static/js/main.260020d5.js.map",
     "339.70ef5567.chunk.css.map": "/react_typescript_pizzastore/static/css/339.70ef5567.chunk.css.map",
     "339.abf48570.chunk.js.map": "/react_typescript_pizzastore/static/js/339.abf48570.chunk.js.map",
     "184.50b3ffaf.chunk.css.map": "/react_typescript_pizzastore/static/css/184.50b3ffaf.chunk.css.map",
@@ -33,6 +33,6 @@
   },
   "entrypoints": [
     "static/css/main.fe1b1b7a.css",
-    "static/js/main.8a9446d4.js"
+    "static/js/main.260020d5.js"
   ]
 }
