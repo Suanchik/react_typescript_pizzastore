@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { getPizzasAsync } from '../../state/reducers/pizzas';
 import * as qs from 'qs';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Sorts, { sorts } from '../Sorts/sorts';
 import { FilerObj, Pizza, UseTypedDispatch, UseTypedSelector } from '../../@types/types';
 import Categories from '../Categories/categories';
@@ -21,10 +21,11 @@ function Home() {
   const [activSort, setActivSort] = useState<FilerObj>({name: 'rating', type: 'desc'});
   const [doAxios, setdoAxios] = useState<'yes' | 'no'>('no');
   const [activCategories, setActivCategories] = useState(0);
+  const location = useLocation()
 
   useEffect(() => {
-    if(window.location.search) {
-      const params = qs.parse(window.location.search.substring(1));
+    if(location.search) {
+      const params = qs.parse(location.search.substring(1));
       const sort = sorts.find(el => el.type === params.type && el.name === params.sortName);
       setActivCategories(Number(params.categorie));
       setActivSort(sort ? sort: {name: 'rating', type: 'desc'});
